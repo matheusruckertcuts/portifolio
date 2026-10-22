@@ -1,0 +1,54 @@
+PORTFÓLIO — MATHEUS RÜCKERT
+Guia para publicar e postar no LinkedIn
+
+CONTEÚDO DA PASTA
+  index.html, style.css, script.js, og-image.png  (já estão aqui)
+  assets/  (NÃO está no ZIP: copie para cá a sua pasta assets original)
+
+A pasta assets precisa ter estes 6 arquivos, com estes nomes exatos:
+  matheus-ruckert.jpg
+  arthur-ruckert.jpg
+  a-marmita-de-1kg.jpg
+  assessoria-nouva.jpg
+  eliseu-importa.jpg
+  negaozin.png
+Dica: deixe cada imagem com no máximo ~300 KB (squoosh.app). O LinkedIn abre
+em navegador interno no celular e imagem pesada deixa o site lento.
+
+PASSO 1 — PUBLICAR NO GITHUB PAGES (gratuito)
+1. Crie um repositório público no GitHub (ex.: portfolio).
+2. Envie index.html, style.css, script.js, og-image.png e a pasta assets.
+   O index.html precisa ficar na raiz do repositório.
+3. Settings > Pages > Deploy from a branch > main > / (root) > Save.
+4. Em 1 a 3 minutos o endereço aparece:
+   https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/
+
+PASSO 2 — TROCAR O ENDEREÇO NO PREVIEW (obrigatório para a capa aparecer)
+No index.html, procure por:  https://SEU-USUARIO.github.io/SEU-REPOSITORIO/
+Ele aparece 4 vezes (canonical, og:url, og:image e twitter:image).
+Troque pelo seu endereço real do Passo 1, mantendo a barra final, e envie o
+arquivo atualizado ao GitHub. Se não trocar, o site funciona, mas o link
+no LinkedIn sai sem a imagem de capa.
+
+PASSO 3 — FORÇAR O LINKEDIN A ATUALIZAR O PREVIEW
+1. Abra https://www.linkedin.com/post-inspector/
+2. Cole o endereço do site e clique em Inspect.
+3. Confira título, descrição e imagem. Se algo estiver antigo, clique de novo.
+   (O LinkedIn guarda o preview em cache; este passo limpa o cache.)
+
+PASSO 4 — POSTAR E FIXAR NO PERFIL
+- Poste o link em um post normal; o card com a capa aparece sozinho.
+- Para deixar sempre visível: no seu perfil, em "Destaques" > Adicionar >
+  Link, e use o endereço do site. No campo "Site" das informações de contato
+  também.
+
+TESTAR NO COMPUTADOR ANTES
+O player do YouTube precisa de um endereço web (abrir o index.html direto
+causa o erro 153). Na pasta do site, rode:
+  python -m http.server 4173
+e abra http://localhost:4173. Para encerrar: Ctrl+C.
+
+VÍDEOS
+Os 8 vídeos vêm do YouTube. Cada um precisa estar como Público ou Não listado
+e com "Permitir incorporação" ativado (YouTube Studio > Conteúdo > vídeo >
+Mostrar mais). Vídeo privado ou sem incorporação não toca no site.
